@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiger Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<style>
+    /* CSS RESET */
+    body{
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        color: antiquewhite;
+        background: url('img/bg.jpg');
+        position: relative;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .left{
+        display: inline block;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    .left img{
+        width: 105px;
+    }
+    .left div{
+        text-align: center;
+        color: orange;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .mid{
+        display: block;
+        width: 75%;
+        margin: 5px auto;
+        text-align: center;
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        color: white;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover , .navbar li a:active{
+        text-decoration: underline;
+        color: orange;
+        opacity: 2;
+    }
+    .btn{
+        margin: 0px 10 px;
+        background-color: rgb(240, 118, 19);
+        font-family: 'Ubuntu', sans-serif;
+        color: rgb(105, 57, 17);
+        padding: 4px 14px;
+        border: 2px solid whitesmoke;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(243, 153, 102);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 110px 30px;
+        padding: 60px;
+        width: 40%;
+        border-radius: 30px;
+    }
+    .formgroup input{
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 1px;
+        border: solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .home{
+        position: absolute;
+        margin-left: 800px;
+        margin-top: 150px;
+        border-radius: 200px;
+        opacity: 80%;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <!--left for logo-->
+        <img src="img/logo.jpg" alt="">
+        <div>TIGER FITNESS</div>
+        </div>
+        <div class="mid">
+            <!--mid for nav bar-->
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About Us.html">About us</a></li>
+                <li><a href="https://www.calculator.net/fitness-and-health-calculator.html">Fitness Calculator</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!--right for buttons-->
+        <button class="btn">Call Us</button>
+        <button class="btn">E-Mail Us</button>
+        </div>
+        <div class="home">
+            <img src="img/home.jpg" width="500">
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join to roar like a tiger</h1>
+        <form class="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="number" name="" placeholder="Enter your age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your address">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
